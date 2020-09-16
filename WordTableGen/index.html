@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>  
+    <div id = "content">
+        <div id = "chooseWords">
+            <textarea name="" id="input" cols="30" rows="10">
+            </textarea>
+                    
+                <input type="button" class = "first" value = "addRow" onclick = "generateTable('row')">
+                <input type="button" class = "second" value = "addColumn" onclick = "generateTable('column')">
+                <input type="button" class = "first" value = "removeRow" onclick = "remove('row')">
+                <input type="button" class = "second" value = "removeColumn" onclick = "remove('column')">
+
+                <input type="button" class = "first" value = "submit" onclick = "submit()">
+                <input type="button" class = "second" value = "Clear" onclick = "Clear()">   
+                <input type="button" class = "first" value = "fill" onclick = "fill()">
+                <input type="button" class = "second" value = "includeWords" onclick = "includeWords()">
+                <input type="button" class = "first" value = "toPDF" onclick = "createPDF()">
+            <div>
+                <input type="checkbox" id = "duples"> 
+                D
+                u
+                p
+                l
+                i
+                c
+                a
+                t
+                e
+                s
+            </div>
+        </div>
+        <div id = "tableDiv">
+            <table id = "table">
+                <tr>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script src = "main.js">
+    </script>
+</body>
+</html>
